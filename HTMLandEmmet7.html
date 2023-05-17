@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html and emmet Question 7</title>
+</head>
+<body>
+    <p> <b> In Emmet, nesting operators are special characters that allow you to define the hierarchical structure of HTML elements quickly and concisely. They help in creating nested elements without the need for writing explicit HTML tags. Here are the nesting operators used in Emmet. </b> </p>
+    <p>
+        <br>
+       <b> Child <mark> '(>)'': </b></mark> The child operator is represented by the > symbol. It is used to specify that one element is a direct child of another element. It creates a parent-child relationship between elements.
+    </p>
+    <h3>Example:</h3>
+    <p>ul > li > a</p>
+    <h3>This Expends to:</h3>
+    <p>
+        &lt;ul&gt; <br>
+        &lt;li&gt; <br>
+        &lt;a&gt;&lt;/a&gt; <br>
+        &lt;/li&gt; <br>
+        &lt;/ul&gt;
+          
+    </p> 
+    <br>
+    <p>
+        <b> Sibling <mark> (+): </b></mark> The sibling operator is denoted by the + symbol. It represents elements that are siblings, i.e., they share the same parent element. Sibling elements appear immediately after each other in the HTML structure.
+    </p>
+    <h3>Example:</h3>
+    <p>div + p
+    </p>
+    <h3>This Expends to:</h3>
+    <p>
+        &lt;div&gt;&lt;/div&gt;<br>
+        &lt;p&gt;&lt;/p&gt;    </p>
+        <br>
+        <p>
+            <b> Climb Up <mark> (^):</b></mark> The climb up operator is indicated by the ^ symbol. It allows you to move up the hierarchy and select the parent element of the current element.
+        </p>
+        <h3>
+            Example:
+        </h3>
+        <p>
+            div > p ^ a
+
+        </p>
+        <h3>This expends to </h3>
+        <p>
+            &lt;div&gt; <br>
+                &lt;p&gt;&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;a&gt;&lt;/a&gt;
+              
+        </p>
+        <br>
+        <p> <b> <mark>Multiplication (*): </b> </mark> The multiplication operator is represented by the * symbol. It allows you to specify the number of times an element should be repeated or multiplied.</p>
+        <h3>Example:</h3>
+        <p>ul > li.item$*3
+        </p>
+        <h3>This expends to</h3>
+        <p>
+            &lt;ul&gt; 
+                &lt;li class="item1"&gt;&lt;/li&gt;<br>
+                &lt;li class="item2"&gt;&lt;/li&gt;<br>
+                &lt;li class="item3"&gt;&lt;/li&gt;<br>
+              &lt;/ul&gt;&lt;              
+        </p>
+        <p>
+            These nesting operators provide a concise and powerful way to describe the hierarchical structure of HTML elements in Emmet. They facilitate faster and more efficient HTML coding by reducing the need for writing repetitive or verbose HTML tags.    
+        </p>
+    
+</body>
+</html>
